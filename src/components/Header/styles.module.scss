@@ -1,0 +1,23 @@
+.header {
+  height: 8rem;
+  width: 100%;
+  padding: 0 1rem;
+  background-color: rgb(0, 15, 31);
+  position: fixed;
+  z-index: 2;
+}
+
+.wrapper {
+  height: 100%;
+  margin: 0 auto;
+  padding-right: 10rem;
+}
+
+.logo-container {
+  width: 16rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  cursor: pointer;
+}

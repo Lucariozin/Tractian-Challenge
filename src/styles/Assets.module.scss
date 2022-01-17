@@ -1,0 +1,25 @@
+.charts-container {
+  display: flex;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 1rem;
+  justify-content: space-between;
+  gap: 1rem;
+
+  @media (max-width: 1350px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.assets-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80rem, auto));
+  justify-content: center;
+  margin: 4rem 1rem 3rem 1rem;
+  gap: 2rem;
+
+  @media (max-width: 1080px) {
+    grid-template-columns: repeat(auto-fit, minmax(70rem, auto));
+  }
+}

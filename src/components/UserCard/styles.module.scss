@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  background-color: rgb(255, 255, 255);
+  max-width: 70rem;
+  width: 100%;
+  height: 7rem;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.2);
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: all .2s;
+
+  &:hover {
+    background-color: rgb(241, 241, 241);
+  }
+}
+
+.name-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.6rem;
+}
