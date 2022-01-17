@@ -24,14 +24,16 @@ export default function Home({ assets }: HomeProps) {
 
   return (
     <div className={styles.container}>
-      <Chart
-        title='Total Collects Uptime'
-        yAxisTitle='Collects'
-        seriesName='Total'
-        categories={totalCollectsUptimeCategories}
-        data={totalCollectsUptimeData}
-        width={1055}
-      />
+      <div className={styles['chart-container']}>
+        <Chart
+          title='Total Collects Uptime'
+          yAxisTitle='Collects'
+          seriesName='Total'
+          categories={totalCollectsUptimeCategories}
+          data={totalCollectsUptimeData}
+          width={1055}
+        />
+      </div>
     </div>
   )
 }

@@ -13,13 +13,15 @@
 }
 
 .assets-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(80rem, auto));
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 4rem 1rem 3rem 1rem;
   gap: 2rem;
 
-  @media (max-width: 1080px) {
-    grid-template-columns: repeat(auto-fit, minmax(70rem, auto));
+  @media (min-width: 1900px) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80rem, auto));
+    justify-content: center;
   }
 }

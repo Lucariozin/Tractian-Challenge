@@ -1,6 +1,39 @@
 .container {
-  margin: 0 2rem;
-  margin-top: 3rem;
   display: flex;
   justify-content: center;
+  margin: 0 1rem;
+  overflow: scroll;
+}
+
+.chart-container {
+  margin-top: 3rem;
+  width: 105.5rem;
+
+  @media (max-width: 1250px) {
+    margin-left: 10rem;
+  }
+
+  @media (max-width: 1150px) {
+    margin-left: 20rem;
+  }
+
+  @media (max-width: 1050px) {
+    margin-left: 30rem;
+  }
+
+  @media (max-width: 950px) {
+    margin-left: 40rem;
+  }
+
+  @media (max-width: 850px) {
+    margin-left: 50rem;
+  }
+
+  @media (max-width: 750px) {
+    margin-left: 60rem;
+  }
+
+  @media (max-width: 650px) {
+    margin-left: 70rem;
+  }
 }
