@@ -3,9 +3,17 @@ import { Layout } from "antd";
 
 import { Menu } from "../Menu";
 
-export function Sider() {
+interface SiderProps {
+  menuIsOpen: boolean;
+};
+
+export function Sider({ menuIsOpen }: SiderProps) {
   return (
-    <Layout.Sider width={256} className={styles['side-bar']}>
+    <Layout.Sider
+      width={256}
+      style={{ display: menuIsOpen ? 'flex' : 'none' }}
+      className={styles['side-bar']}
+    >
       <Menu />
     </Layout.Sider>
   );

@@ -43,9 +43,9 @@ export function Menu() {
 
   return (
     <AntdMenu
-      style={{ width: 256 }}
       mode="inline"
       theme="dark"
+      style={{ width: 256 }}
     >
       <Typography.Title
         level={2}

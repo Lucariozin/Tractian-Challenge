@@ -1,6 +1,4 @@
 import { Layout } from "antd";
-import styles from './styles.module.scss';
-
 import { ReactNode } from "react";
 
 interface ContentProps {
@@ -9,7 +7,7 @@ interface ContentProps {
 
 export function Content({ children }: ContentProps) {
   return (
-    <Layout.Content className={styles.content}>
+    <Layout.Content style={{ marginTop: '8rem' }}>
       {children}
     </Layout.Content>
   );

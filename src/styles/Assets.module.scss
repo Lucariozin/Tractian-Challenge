@@ -6,7 +6,7 @@
   justify-content: space-between;
   gap: 1rem;
 
-  @media (max-width: 1350px) {
+  @media (max-width: 1085px) {
     flex-direction: column;
     align-items: center;
   }
@@ -19,7 +19,7 @@
   margin: 4rem 1rem 3rem 1rem;
   gap: 2rem;
 
-  @media (min-width: 1900px) {
+  @media (min-width: 1650px) {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(80rem, auto));
     justify-content: center;
