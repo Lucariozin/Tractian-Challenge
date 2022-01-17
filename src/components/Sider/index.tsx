@@ -2,15 +2,14 @@ import styles from './styles.module.scss';
 import { Layout } from "antd";
 
 import { Menu } from "../Menu";
+import { useMenu } from '../../hooks/useMenu';
 
-interface SiderProps {
-  menuIsOpen: boolean;
-};
+export function Sider() {
+  const { menuIsOpen } = useMenu();
 
-export function Sider({ menuIsOpen }: SiderProps) {
   return (
     <Layout.Sider
-      width={256}
+      width={275}
       style={{ display: menuIsOpen ? 'flex' : 'none' }}
       className={styles['side-bar']}
     >

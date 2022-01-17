@@ -9,28 +9,22 @@ import { Sider } from '../components/Sider';
 import { Header } from '../components/Header';
 import { Content } from '../components/Content';
 
-import { useState } from 'react';
+import { MenuProvider } from '../hooks/useMenu';
 
 export default function MyApp({ Component, pageProps }: AppProps) {
-  const [menuIsOpen, setMenuIsOpen] = useState(false);
-
-  function toggleMenu() {
-    setMenuIsOpen((oldState) => !oldState);
-  }
-
   return (
-    <>
+    <MenuProvider>
       <Layout>
-        <Sider menuIsOpen={menuIsOpen} />
+        <Sider />
 
         <Layout>
-          <Header menuIsOpen={menuIsOpen} toggleMenu={toggleMenu} />
+          <Header />
 
           <Content>
             <Component {...pageProps} />
           </Content>
         </Layout>
       </Layout>
-    </>
+    </MenuProvider>
   );
 }

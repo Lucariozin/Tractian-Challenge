@@ -5,6 +5,7 @@ import { api } from '../../services/api';
 import Router from 'next/router';
 
 import { useEffect, useState } from 'react';
+import { useMenu } from '../../hooks/useMenu';
 
 const { SubMenu, Item } = AntdMenu;
 
@@ -23,11 +24,17 @@ export function Menu() {
   const [companies, setCompanies] = useState<Company[]>([]);
   const [units, setUnits] = useState<Unit[]>([]);
 
+  const { closeMenu } = useMenu();
+
   function handleRedirectToUsersPage(companyId: number, unitId: number) {
+    closeMenu();
+
     Router.push(`/users?cid=${companyId}&uid=${unitId}`);
   }
 
   function handleRedirectToAssetsPage(companyId: number, unitId: number) {
+    closeMenu();
+
     Router.push(`/assets?cid=${companyId}&uid=${unitId}`);
   }
 

@@ -5,12 +5,11 @@ import { MenuUnfoldOutlined, MenuFoldOutlined } from '@ant-design/icons';
 
 import Router from 'next/router';
 
-interface HeaderProps {
-  menuIsOpen: boolean;
-  toggleMenu: () => void;
-};
+import { useMenu } from '../../hooks/useMenu';
 
-export function Header({ menuIsOpen, toggleMenu }: HeaderProps) {
+export function Header() {
+  const { toggleMenu, menuIsOpen } = useMenu();
+
   return (
     <Layout.Header className={styles.header}>
       <div className={styles.wrapper}>
